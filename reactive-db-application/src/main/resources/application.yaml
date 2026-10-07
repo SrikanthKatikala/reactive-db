@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: reactive-db
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/sys?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Srikanth
+
+  # Optional if you use Spring Data repositories
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 9s
